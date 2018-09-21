@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project Botleaf">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <target name="create_run_jar">
+        <jar destfile="C:/Users/Colton/workspace/Botleaf/dist/Botleaf.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Main-Class" value="org.nightleaf.Main"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="C:/Users/Colton/workspace/Botleaf/bin"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/pircbot.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/groovy-2.4.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/jython.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/gson-2.5.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/twitch-api-wrapper-0.3-jar-with-dependencies.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/mysql.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/twitter4j-async-4.0.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/twitter4j-core-4.0.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/twitter4j-examples-4.0.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/twitter4j-media-support-4.0.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/twitter4j-stream-4.0.4.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="C:/Users/Colton/workspace/Botleaf/libs/joda-time-2.9.1.jar"/>
+        </jar>
+    </target>
+</project>
